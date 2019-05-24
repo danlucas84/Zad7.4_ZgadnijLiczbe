@@ -28,22 +28,24 @@ public class GuessNumber {
                     System.out.println("liczba w przedziale i jest podzielna przez 3");
 
 
-                    while (!(userChoice >= minValue && userChoice <= maxValue && userChoice % 3 == 0))
+                    while (!(userChoice >= minValue && userChoice <= maxValue && userChoice % 3 == 0)) {
                         System.out.println("Liczba nie  spełnia warunku");
-                    System.out.println("Podaj ponownie liczbe");
-                    userChoice = input.nextInt();
-                    userChoice++;
-                    //if (!(userChoice >= minValue && userChoice <= maxValue && userChoice % 3 == 0))
-                    //input.close();
-                    //else {
-                    //System.out.println("Podaj ponownie liczbe");
-                    //userChoice = input.nextInt();
-                    //System.out.println("liczba nie spełnia warunek nie jest z przedziału i jest podzielna przez 3");
+                        System.out.println("Podaj ponownie liczbe");
+                        userChoice = input.nextInt();
+                        userChoice++;
+                        //if (!(userChoice >= minValue && userChoice <= maxValue && userChoice % 3 == 0))
+                        //input.close();
+                        //else {
+                        //System.out.println("Podaj ponownie liczbe");
+                        //userChoice = input.nextInt();
+                        //System.out.println("liczba nie spełnia warunek nie jest z przedziału i jest podzielna przez 3");
+                    }
                 }
             }
         }
     }
 }
+
 
 
 
