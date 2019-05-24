@@ -26,17 +26,17 @@ public class GuessNumber2 {
                 userChoice = input.nextInt();
             }
 
-                if (userChoice < minValue) {
-                    System.out.println("liczba za mała");
+            if (userChoice < minValue) {
+                System.out.println("liczba za mała");
+                System.out.println("Podaj ponownie liczbe");
+                userChoice = input.nextInt();
+                if (userChoice > maxValue) {
+                    System.out.println("liczba za duza");
                     System.out.println("Podaj ponownie liczbe");
                     userChoice = input.nextInt();
-                    if (userChoice > maxValue) {
-                        System.out.println("liczba za duza");
-                        System.out.println("Podaj ponownie liczbe");
-                        userChoice = input.nextInt();
-                    }
                 }
             }
         }
     }
+}
 
